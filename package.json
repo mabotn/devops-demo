@@ -1,21 +1,21 @@
 {
-  "name": "devops-demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "mocha": "^3.3.0",
-    "request": "^2.81.0"
-  },
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "socket.io": "^1.7.3",
-    "underscore": "^1.8.3"
-  }
+    "name": "devops-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "mocha": "^3.3.0",
+        "request": "^2.81.0"
+    },
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "express": "^4.15.2",
+        "socket.io": "^1.7.3",
+        "underscore": "^1.8.3"
+    }
 }
