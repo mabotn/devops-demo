@@ -7,8 +7,8 @@
 
 I've been doing a basic comparison to CI platforms with a tiny NodeJS project, here's my output : 
 
-- Bitbucket (14 seconds)
-- Codeship (28 seconds)
-- Travis CI (39 seconds)
-- Circle CI (85 seconds)
-- GitLab (+120 seconds)
+- Bitbucket (12 seconds)
+- Codeship (32 seconds)
+- Travis CI (42 seconds)
+- Circle CI (99 seconds)
+- GitLab (120 seconds)
