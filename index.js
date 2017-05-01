@@ -7,7 +7,7 @@ var _ = require('underscore')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
-// app.use(express.static('dist'))
+app.use(express.static('dist'))
 
 setInterval(function() {
     io.emit('random', {
