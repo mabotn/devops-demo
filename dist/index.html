@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DevOps Demo</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="number-container">
+            <h1 id="number">0</h1>
+            <p id="subtext">Initializing...</p>
+        </div>
+
+        <script>
+            var socket = io()
+            var counter = 4
+            socket.on('random', function(payload) {
+                document.getElementById('number').innerText = payload.value
+                counter = 4
+            })
+
+            setInterval(function() {
+                document.getElementById('subtext').innerText = 'A New Number After ' + (counter) + ' Seconds'
+                counter--
+            }, 1000)
+        </script>
+    </body>
+</html>
